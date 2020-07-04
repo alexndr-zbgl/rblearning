@@ -6,7 +6,7 @@ class Calculator
   def number_of_digits number
 
     # Змінна, яка отримає значення кількості чисел
-    result = 0
+    result = 1
 
     # Просимо ввести довільне число
     puts "Введіть будь ласка довільне число"
