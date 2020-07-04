@@ -6,7 +6,7 @@ class Calculator
   def number_of_digits number
 
     # Змінна, яка отримає значення кількості чисел
-    result = 1
+    result = 0
 
     # Просимо ввести довільне число
     puts "Введіть будь ласка довільне число"
@@ -23,15 +23,19 @@ class Calculator
     # 3. Якщо результат ( цілочисельний ) рівний нулю, то у змінну записуємо результат
     # 4. Якщо результат не рівний 0, то переходимо по пункту 1
     # 5. У іншому випадку, закінчуємо алгоритм
-    
+    if number == 0
+        result = 1
+    end
     while number != 0 do
-        result += 1
-        number /= 10
-        if number == 0
-            break
+        if(number > 0)
+            result += 1
+            number /= 10
+        elsif number < 0
+            result += 1
+            number /= -10
         end
     end
-
+    
     puts result
 
   end
