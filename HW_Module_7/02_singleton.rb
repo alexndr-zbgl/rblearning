@@ -30,9 +30,9 @@ class SingletonClass
   # статичну змінну ( змінну класу )
   def self.get_calculator
     if @@n >= 1
-      SingletonClass
+      temp
     else
-      SingletonClass.new
+      temp = SingletonClass.new
     end
   end
 end
